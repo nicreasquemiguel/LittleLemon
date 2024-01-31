@@ -9,7 +9,10 @@ class Booking(models.Model):
 class Menu(models.Model):
     title = models.CharField(max_length = 255)
     price = models.FloatField()
-    inventory = models.IntegerField() 
+    inventory = models.IntegerField()
+
+    def __str__(self):
+        return f'{self.title} : {str(self.price)}' 
 
 class MenuItem(models.Model):
     title = models.CharField(max_length=255)
