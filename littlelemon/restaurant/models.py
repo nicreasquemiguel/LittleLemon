@@ -10,3 +10,4 @@ class Menu(models.Model):
     title = models.CharField(max_length = 255)
     price = models.FloatField()
     inventory = models.IntegerField() 
+
